@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delete Page</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <style>
+      .center-sty {
+        height: 100vh;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+      }
+      .wi-card {
+        width: 450px !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-9">
+          <div class="center-sty">
+          <div class="card wi-card">
+            <header class="card-header">
+              <h4 class="card-title mt-2" style="text-align: center">
+                Delete Your Account
+              </h4>
+            </header>
+            <article class="card-body">
+              <form>
+                <div class="form-group">
+                  <label>Username</label>
+                  <input
+                    type="username"
+                    class="form-control"
+                    id="deleteUsername"
+                    placeholder="username"
+                  />
+                </div>
+                <div class="form-group">
+                  <label>Password</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="deletePassword"
+                    placeholder="Password"
+                  />
+                </div>
+                <div class="form-group">
+                  <button
+                    type="button"
+                    id="delete-btn"
+                    class="btn btn-primary btn-block"
+                  >
+                    Delete
+                  </button>
+                </div>
+              </form>
+            </article>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="deleteUserDetails.js"></script>
+  </body>
+</html>

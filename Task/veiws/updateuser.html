@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <style>
+      .center-sty {
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .wi-card {
+        width: 450px !important;
+      }
+      .inlinee {
+        display: inline-block;
+        vertical-align: top; /* Align inputs to the top */
+        margin-right: 10px; /* Add some space between inputs and button */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-9">
+          <div class="center-sty">
+            <div class="card wi-card">
+              <header class="card-header">
+                <h4 class="card-title mt-2" style="text-align: center">
+                  Enter Credentials to Update Password
+                </h4>
+              </header>
+              <article class="card-body">
+                <form>
+                  <div class="form-group">
+                    <label>Username</label>
+                    <input
+                      type="username"
+                      class="form-control"
+                      id="username"
+                      placeholder="username"
+                      required
+                    />
+                  </div>
+                  <div class="inlinee">
+                    <div class="form-group">
+                      <label>Old Password</label>
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="oldpassword"
+                        placeholder="enter old Password"
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label>New Password</label>
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="newpassword"
+                        placeholder="enter new Password"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <p>Note : Both the passwords should not match</p>
+                  <div class="form-group">
+                    <button
+                      type="button"
+                      id="update-btn"
+                      class="btn btn-primary btn-block"
+                    >
+                      update credentials
+                    </button>
+                  </div>
+                </form>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="editUserDetails.js"></script>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up Page</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <style>
+      .center-sty {
+        height: 100vh;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+      }
+      .wi-card {
+        width: 450px !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-9">
+          <div class="center-sty">
+            <div class="card wi-card">
+              <header class="card-header">
+                <h4 class="card-title mt-2" style="text-align: center">
+                  Create Your Account
+                </h4>
+              </header>
+              <article class="card-body">
+                <form>
+                  <div class="form-group">
+                    <label>Username</label>
+                    <input
+                      type="text"
+                      id="signupUsername"
+                      class="form-control"
+                      placeholder="Username"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label>Password</label>
+                    <input
+                      type="password"
+                      id="signupPassword"
+                      class="form-control"
+                      pattern=".{7,}"
+                      placeholder="Password"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <button
+                      id="signup-btn"
+                      type="button"
+                      class="btn btn-primary btn-block"
+                    >
+                      Sign up
+                    </button>
+                  </div>
+                </form>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

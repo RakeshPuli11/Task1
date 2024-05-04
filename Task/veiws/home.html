@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  />
+    <style>
+         .card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .card-body {
+            padding: 0;
+        }
+
+        .card-title {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .card-text {
+            font-size: 14px;
+            color: #555;
+        }
+        #displayButton{
+            margin-top: 100px;
+            margin-left: 450px;
+            width: 200px;
+            height:50px;
+            border-radius: 15px;
+            border: none;
+            font-size: 20px;
+            outline: none;
+        }
+        #displayButton:hover {
+        box-shadow: 0px 0px 20px rgb(183, 182, 182);
+        }
+        #goBack{
+            margin-top: 100px;
+            margin-left: 1200px;
+            width: 200px;
+            height:50px;
+            border-radius: 15px;
+            border: none;
+            font-size: 20px;
+            outline: none;
+        }
+        #goBack:hover{
+            box-shadow: 0px 0px 20px rgb(183, 182, 182);
+        }
+        .container{
+            margin-top: 200px;
+        }
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    .container {
+    margin-top: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensures the container takes the full height of the viewport */
+}
+
+}
+
+#userTable {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    border: 2px solid #ddd;
+}
+
+#userTable th, #userTable td {
+    padding: 12px;
+    text-align: left;
+}
+
+#userTable th {
+    background-color: #f2f2f2;
+}
+
+#displayButton {
+    margin-top: 200px;
+    margin-left: 650px;
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    font-size: 20px;
+    outline: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#displayButton:hover {
+    background-color: #45a049;
+}
+
+#goBack {
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    font-size: 20px;
+    outline: none;
+    background-color: #f44336;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#goBack:hover {
+    background-color: #d32f2f;
+}
+
+    </style>
+</head>
+<body>
+    <button id="goBack">Go To Home Page</button>
+    <button id="displayButton">Display Users</button>
+
+    <div class="container">
+        <table id="userTable">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Username</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <!-- User data will be dynamically added here -->
+            </tbody>
+        </table>        
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
